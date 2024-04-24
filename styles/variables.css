@@ -1,1 +1,11 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: 'Inter-Variable', sans-serif;
+  --accent-font: 'PressStart2P', sans-serif;
+  --bacground-color: rgba(255, 255, 255, 1);
+  --accent-color: rgba(0, 0, 0, 1);
+  --color-gradient-start-vertical: #e7e7e7;
+  --color-gradient-end-vertical: #1a1a1a;
+  --color-gradient-start-horizontal: #d3d3d3;
+  --color-gradient-end-horizontal: transparent;
+  --color-text-shadow: rgba(255, 255, 255, 1);
+}

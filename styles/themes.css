@@ -4,3 +4,53 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+.theme-dark:root {
+  --font-weight-text: 465;
+  --font-weight-header: 785;
+  --bacground-color: rgba(0, 0, 0, 1);
+  --accent-color: rgba(0, 204, 20, 1);
+  --color-gradient-start-vertical: #007f0c;
+  --color-gradient-end-vertical: #004306;
+  --color-gradient-start-horizontal: #000;
+  --color-gradient-end-horizontal: transparent;
+  --color-text-shadow: rgba(0, 0, 0, 1);
+  --blend-mod-color: rgba(0, 204, 20, 1);
+  --conterColor: rgba(0, 204, 20, 1);
+  --colorSparks: rgba(255, 0, 0, 1);
+  --colorFillActive: rgba(255, 0, 0, 1);
+}
+
+.theme-light:root {
+  --font-weight-text: 400;
+  --font-weight-header: 700;
+  --bacground-color: rgba(255, 255, 255, 1);
+  --accent-color: rgba(0, 0, 0, 1);
+  --color-gradient-start-vertical: #e7e7e7;
+  --color-gradient-end-vertical: #1a1a1a;
+  --color-gradient-start-horizontal: #d3d3d3;
+  --color-gradient-end-horizontal: transparent;
+  --color-text-shadow: rgba(255, 255, 255, 1);
+  --blend-mod-color: rgba(255, 255, 255, 1);
+  --conterColor: rgba(0, 0, 0, 1);
+  --colorSparks: rgba(255, 0, 0, 1);
+  --colorFillActive: rgba(255, 0, 0, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-weight-text: 465;
+    --font-weight-header: 785;
+    --bacground-color: rgba(0, 0, 0, 1);
+    --accent-color: rgba(0, 204, 20, 1);
+    --color-gradient-start-vertical: #007f0c;
+    --color-gradient-end-vertical: #004306;
+    --color-gradient-start-horizontal: #000;
+    --color-gradient-end-horizontal: transparent;
+    --color-text-shadow: rgba(0, 0, 0, 1);
+    --blend-mod-color: rgba(0, 204, 20, 1);
+    --conterColor: rgba(0, 204, 20, 1);
+    --colorSparks: rgba(255, 0, 0, 1);
+    --colorFillActive: rgba(255, 0, 0, 1);
+  }
+}

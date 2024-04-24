@@ -135,20 +135,26 @@ background-size: cover;
   font-variation-settings: "wght" var(--font-weight-header);
 }
 
-.main__card-image {
+.main__card-imageContainer {
+  position: relative;
   height: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
-  padding-top: 25px;
+  overflow: hidden;
   text-align: right;
-  background-image: url("../images/image.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
 }
 
-.main__watermark {  
-  padding-right: 25px;
+.main__card-image {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__watermark {
+  position: absolute;
+  top: 25px;
+  right: 25px;
   opacity: 50%;
   font-family: var(--accent-font);
   font-weight: 400;
@@ -239,7 +245,6 @@ background-size: cover;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border: none;
   border: 2px solid var(--accent-color);
   padding: 15px 18px;
   background-color: var(--bacground-color);
@@ -392,7 +397,7 @@ background-size: cover;
   transition: fill 0.3s 0.06s;
 }
 
-.like-icon.is-liked .core, .like-icon.is-liked .main-body  {
+.like-icon.is-liked .core, .like-icon.is-liked .main-body {
   fill: var(--colorFillActive);
 }
 
@@ -494,11 +499,9 @@ dialog::backdrop {
   dialog[open] {
     padding: 30px 42px;
   }
-  .main__card-image {
-    padding-top: 23px;
-  }
-  .main__watermark {  
-    padding-right: 11px;
+  .main__watermark {
+    top: 23px;
+    right: 11px;
   }
   .save-button {
     flex-direction: column;

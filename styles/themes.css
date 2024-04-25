@@ -54,3 +54,21 @@
     --colorFillActive: rgba(255, 0, 0, 1);
   }
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --font-weight-text: 400;
+  --font-weight-header: 700;
+  --bacground-color: rgba(255, 255, 255, 1);
+  --accent-color: rgba(0, 0, 0, 1);
+  --color-gradient-start-vertical: #e7e7e7;
+  --color-gradient-end-vertical: #1a1a1a;
+  --color-gradient-start-horizontal: #d3d3d3;
+  --color-gradient-end-horizontal: transparent;
+  --color-text-shadow: rgba(255, 255, 255, 1);
+  --blend-mod-color: rgba(255, 255, 255, 1);
+  --conterColor: rgba(0, 0, 0, 1);
+  --colorSparks: rgba(255, 0, 0, 1);
+  --colorFillActive: rgba(255, 0, 0, 1);
+  }
+}
